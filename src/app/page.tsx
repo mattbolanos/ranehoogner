@@ -63,8 +63,7 @@ export default function Home() {
             </p>
             <p className="mt-4 max-w-md font-sans text-base leading-relaxed text-earth/80">
               Creating baskets since 1982. Handcrafted baskets, floral
-              arrangements, wreaths, garden design, and wedding florals from
-              North Idaho.
+              arrangements, wreaths, garden design, and wedding florals.
             </p>
             <p className="mt-4 font-serif italic text-sage">
               &ldquo;Growing for the future&rdquo;
