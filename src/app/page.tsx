@@ -1,22 +1,5 @@
 import Image from "next/image";
-
-const gallery = [
-  { src: "/basket-flowers.jpg", alt: "Basket filled with flowers" },
-  { src: "/floral-basket.jpg", alt: "Floral basket arrangement" },
-  { src: "/baskets-posed-in-forest.jpg", alt: "Baskets posed in a forest" },
-  { src: "/floral-wreath.jpg", alt: "Handmade floral wreath" },
-  {
-    src: "/holding-basket-flowers-in-background.jpg",
-    alt: "Holding a basket with flowers in the background",
-  },
-  { src: "/baskets-posed-in-nature.jpg", alt: "Baskets posed in nature" },
-  { src: "/basket-plants.jpg", alt: "Basket with plants" },
-  { src: "/making-basket.jpeg", alt: "Rane weaving a basket" },
-  {
-    src: "/cat-sleeping-in-basket.jpg",
-    alt: "Cat sleeping in a handmade basket",
-  },
-];
+import Gallery from "./gallery";
 
 export default function Home() {
   return (
@@ -112,22 +95,7 @@ export default function Home() {
       <section id="gallery" className="border-t border-sand">
         <div className="mx-auto max-w-5xl px-6 py-16">
           <h2 className="font-serif text-2xl font-bold text-bark">Gallery</h2>
-          <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {gallery.map((img) => (
-              <div
-                key={img.src}
-                className="group relative aspect-square overflow-hidden rounded-lg"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-            ))}
-          </div>
+          <Gallery />
         </div>
       </section>
 
